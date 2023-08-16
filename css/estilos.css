@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Playfair+Display:wght@600&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Playfair+Display:wght@600&family=Righteous&family=Roboto+Slab:wght@200&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+/*fondo de barra*/
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 1px grey;
+    border-radius: 5px;
+}
+
+/*barra*/
+::-webkit-scrollbar-thumb {
+    background: #F6AB54;
+    border-radius: 5px;
+}
+
+/*Barra:hover*/
+::-webkit-scrollbar-thumb:hover {
+    background: #D91E1E;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+main {
+    background-color: #000000;
+}
+
+body {
+    background-color: black;
+    background-size: cover;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 50px;
+    position: fixed;
+    top: 0px;
+    transition: top 0.3s;
+    z-index: 50;
+    background-color: black;
+    padding: 30px;
+}
+
+.item-menu {
+    text-decoration: none;
+    color: #F6AB54;
+    font-family: 'Caprasimo', cursive;
+    font-size: xx-large;
+}
+
+nav li {
+    list-style: none;
+}
+
+.optcion-menu {
+    transform: scale(1) translate(0);
+    transition: transform 0.5s;
+    list-style: none;
+    margin-top: 20px;
+}
+
+.optcion-menu:hover {
+    transform: scale(1.1) translate(0, 5px);
+}
+
+.item-menu:hover {
+    color: #D91E1E;
+}
+
+header {
+    width: 100%;
+    margin: auto
+}
+
+header img {
+    width: 50%;
+    border-radius: 20%;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+.imagen-hero {
+    width: 100%;
+    max-width: 100%;
+    border-bottom: dashed 8px rgb(255, 255, 255);
+}
+
+.autoplay img {
+    width: 20%;
+    display: flex;
+    margin: auto;
+    margin-bottom: 50px;
+    background-size: cover;
+    border-radius: 31px 31px 31px 31px;
+    padding: 10px;
+}
+
+#slider {
+    margin: auto;
+    width: 90%;
+    margin-top: 150px;
+    z-index: 9;
+
+}
+
+.titulo-menu {
+    color: black;
+    font-family: 'Caprasimo', cursive;
+    text-align: center;
+    font-size: xx-large;
+    padding: 50px;
+}
+
+.descripcion {
+    color: #000000;
+    font-family: 'Roboto Slab', serif;
+    /* font-family: 'Playfair Display';*/
+    font-weight: bold;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    margin-top: 40px
+}
+
+.comidas {
+    margin-top: 100px;
+    /* background-image: url(/img/footer-img.avif);
+    background-position: 0px -900px;*/
+    background-color: #D91E1E;
+}
+
+.menu-comida {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.tarjeta {
+    background-color: rgb(15, 15, 15);
+    padding: 5px;
+    margin: 50px 30px;
+    border-radius: 66px 66px 66px 66px;
+    -moz-border-radius: 66px 66px 66px 66px;
+    -webkit-border-radius: 66px 66px 66px 66px;
+    border: 0px solid #000000;
+    transform: scale(1) translate(0);
+    transition: transform 0.5s;
+}
+
+.card {
+    border-radius: none;
+}
+
+.tarjeta:hover {
+    transform: scale(1.1) translate(0, 5px);
+}
+
+.tarjeta img {
+    max-width: 100%;
+    padding: 5px;
+}
+
+.texto-tarjeta {
+    color: white;
+    margin: auto;
+    width: 90%;
+    text-align: center;
+}
+
+.texto-tarjeta p {
+    padding: 10px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+}
+
+.titulo-tarjeta {
+    text-align: center;
+    padding: 5px;
+    font-family: 'Caprasimo', cursive;
+    display: inline-block;
+    background-color: #D91E1E;
+    font-size: small;
+    font-weight: 100;
+    border-radius: 5px;
+}
+
+.Vinculo-tarjeta {
+    text-decoration: none;
+    font-family: 'Caprasimo', cursive;
+}
+
+.HacerPedido {
+    position: fixed;
+    bottom: 1em;
+    right: 0px;
+    padding: 1em;
+    width: 150px;
+    height: 70px;
+    margin: auto;
+    text-decoration: none;
+    color: white;
+    background-color: #D91E1E;
+    border-radius: 15px 0px 0px 15px;
+    -moz-border-radius: 15px 0px 0px 15px;
+    -webkit-border-radius: 15px 0px 0px 15px;
+    -webkit-box-shadow: -15px 12px 18px -9px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -15px 12px 18px -9px rgba(0, 0, 0, 0.75);
+    box-shadow: -15px 12px 18px -9px rgba(0, 0, 0, 0.75);
+    font-family: 'Caprasimo', cursive;
+}
+
+.vegano {
+    width: 60%;
+    margin: auto;
+    padding: 50px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    color: white;
+    font-family: 'Caprasimo', cursive;
+    font-size: x-large;
+    text-align: center;
+    background-color: rgb(0, 124, 0);
+    border-radius: 10px;
+    border: solid 8px white;
+}
+
+#vegano {
+    border-top: dashed 5px white;
+    border-bottom: dashed 5px white;
+}
+
+.comidas-extras {
+    background-color: #F2B90C;
+    /*background-image: url(https://images.unsplash.com/photo-1602192103300-47e66756152e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80);
+    background-size: cover;
+    background-position: 0px -8px;*/
+}
+
+.extras {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    height: 1100px;
+}
+
+.tarjeta-extra {
+    padding: 5px;
+    margin: auto;
+    width: calc(40% - 200px);
+    margin-top: 100px;
+    background-color: #000000;
+    border-radius: 66px 66px 66px 66px;
+    -moz-border-radius: 66px 66px 66px 66px;
+    -webkit-border-radius: 66px 66px 66px 66px;
+    transform: scale(1) translate(0);
+    transition: transform 0.5s;
+}
+
+.tarjeta-extra:hover {
+    transform: scale(1.1) translate(0, 5px);
+}
+
+.tarjeta-extra img {
+    max-width: 100%;
+}
+
+.centrados {
+    text-align: center;
+}
+
+.muy-grande {
+    margin-left: 75px;
+    width: 230px;
+    height: 130px;
+}
+
+.Sucursales {
+    background-color: rgb(216, 230, 230);
+    height: 700px;
+}
+
+.todas-sucursales {
+    width: 80%;
+    margin: auto;
+}
+
+.desc-sucursal {
+    color: #d91e1ec1;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.cada-sucursal {
+    display: flex;
+    justify-content: space-around;
+}
+
+.sucursal {
+    width: 400px;
+}
+
+.mapa {
+    width: 250px;
+    margin-left: 30px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-image: url(/img/footer-img.avif);
+    background-size: cover;
+    background-position: 0px -300px;
+    height: 400px;
+}
+
+.socials {
+    margin-top: 30px;
+}
+
+.socials li {
+    list-style: none;
+}
+
+.vinculo-footer {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.vinculo-footer:hover {
+    color: #F6AB54;
+}
+
+.img-footer {
+    margin-right: 10px;
+}
+
+.ubicacion {
+    margin-top: 75px;
+    width: 500px;
+    height: 250px;
+    border-radius: 5px;
+    -webkit-box-shadow: 10px 10px 16px -5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 16px -5px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 16px -5px rgba(0, 0, 0, 0.75);
+}
+
+.fot-ubi {
+    margin-top: 80px;
+}
